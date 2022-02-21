@@ -1,0 +1,16 @@
+<reg-form></reg-form>
+
+
+<h1 id="result">GIVE YOUR VALUABLE INFORMATION</h1>
+
+<script type="text/javascript" src="src\assets\registration-widget.js">  </script>
+<script>const vote = document.querySelector('reg-form');
+  const result = document.querySelector('#result');
+  vote.addEventListener('val', (event)=> {
+      console.log('You Liked Angular ...');
+      result.innerHTML = event.detail.status; 
+      console.log(event);
+  });
+  
+
+  </script>
